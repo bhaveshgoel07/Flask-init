@@ -1,8 +1,8 @@
 from flask import Flask
-app = Flask(__name__)
+app = Flask(__name__)   # create a flask app instance
 
 
-@app.route("/")
+@app.route("/")     #multiple routes to same route /home
 @app.route("/home")
 def home():
     return "<h1>Home Page</h1>"
